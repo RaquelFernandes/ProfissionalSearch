@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "611223186971",
+    "firebase_url": "https://profissional-search.firebaseio.com",
+    "project_id": "profissional-search",
+    "storage_bucket": "profissional-search.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:611223186971:android:bc27f350cc783ac7",
+        "android_client_info": {
+          "package_name": "br.iesb.profissionalsearch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "611223186971-1jf8g3f3t0194v31df65qo51gl8tq07i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.iesb.profissionalsearch",
+            "certificate_hash": "84597fd217720df58f9461f6dc8481989e34f748"
+          }
+        },
+        {
+          "client_id": "611223186971-hano626rlqngu7rpbcvj71k654cre6hb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAxAlKStp82VarPzQ5hQzkSuOcTDf-j_o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "611223186971-hano626rlqngu7rpbcvj71k654cre6hb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
