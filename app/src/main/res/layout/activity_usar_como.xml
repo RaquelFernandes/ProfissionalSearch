@@ -12,30 +12,19 @@
     tools:context="br.iesb.profissionalsearch.Activities.UsarComoActivity"
     android:weightSum="1">
 
-    <EditText
+    <Button
+        android:text="Profissional"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:id="@+id/login_txtEmail"
-        android:hint="Email" />
+        android:layout_marginBottom="10dp"
+        android:id="@+id/usarComo_btnEntrarProfissional" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:id="@+id/login_txtSenha"
-        android:hint="Senha" />
 
     <Button
-        android:text="Entrar"
+        android:text="Procurar Profissional"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/login_btnEntrar" />
+        android:layout_marginBottom="10dp"
+        android:id="@+id/usarComo_btnProcurarProfissional" />
 
-    <TextView
-        android:text="QUERO ME CADASTRAR"
-        android:layout_width="match_parent"
-        android:textSize="20dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/login_cadastrar" />
 </LinearLayout>
