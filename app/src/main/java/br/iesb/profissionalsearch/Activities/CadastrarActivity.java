@@ -39,19 +39,19 @@ public class CadastrarActivity extends AppCompatActivity {
         btnSalvar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                auth.createUserWithEmailAndPassword(txtEmail.getText().toString(), txtSenha.getText().toString())
-                    .addOnCompleteListener(CadastrarActivity.this, new OnCompleteListener<AuthResult>() {
-                        @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
-                            if (task.isSuccessful()) {
-                                Toast.makeText(CadastrarActivity.this, "Cadastrado com sucesso", Toast.LENGTH_SHORT).show();
-                                finish();
+            auth.createUserWithEmailAndPassword(txtEmail.getText().toString(), txtSenha.getText().toString())
+                .addOnCompleteListener(CadastrarActivity.this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                    if (task.isSuccessful()) {
+                        Toast.makeText(CadastrarActivity.this, "Cadastrado com sucesso", Toast.LENGTH_SHORT).show();
+                        finish();
 
-                            } else {
-                                Toast.makeText(CadastrarActivity.this, "Erro ao ser cadastrado", Toast.LENGTH_SHORT).show();
-                            }
-                        }
-                    });
+                    } else {
+                        Toast.makeText(CadastrarActivity.this, "Erro ao ser cadastrado", Toast.LENGTH_SHORT).show();
+                    }
+                    }
+                });
             }
         });
 

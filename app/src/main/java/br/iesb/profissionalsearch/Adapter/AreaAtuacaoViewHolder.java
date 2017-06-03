@@ -3,9 +3,7 @@ package br.iesb.profissionalsearch.Adapter;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import br.iesb.profissionalsearch.Activities.AreaAtuacaoActivity;
 import br.iesb.profissionalsearch.R;
 
 /**

@@ -4,22 +4,22 @@ import java.io.Serializable;
 
 public class AreaAtuacao implements Serializable {
 
-    int Id;
-    String Nome;
+    int id;
+    String nome;
 
     public String getNome() {
-        return Nome;
+        return nome;
     }
 
     public void setNome(String nome) {
-        Nome = nome;
+        nome = nome;
     }
 
     public int getId() {
-        return Id;
+        return id;
     }
 
     public void setId(int id) {
-        Id = id;
+        id = id;
     }
 }
