@@ -27,6 +27,8 @@
 
         </activity>
         <activity android:name=".Activities.AreaAtuacaoActivity"></activity>
+        <activity android:name=".Activities.CadastrarActivity" />
+        <activity android:name=".Activities.PerfilActivity"></activity>
     </application>
 
 </manifest>
