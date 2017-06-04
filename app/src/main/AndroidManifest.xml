@@ -29,7 +29,8 @@
         <activity android:name=".Activities.BatePapoActivity" />
         <activity android:name=".Activities.EstadoActivity" />
         <activity android:name=".Activities.PesquisarActivity" />
-        <activity android:name=".Activities.TipoServicoActivity"></activity>
+        <activity android:name=".Activities.TipoServicoActivity" />
+        <activity android:name=".Activities.ResultadoPesquisaActivity"></activity>
     </application>
 
 </manifest>

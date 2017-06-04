@@ -40,5 +40,13 @@ public class PesquisarActivity extends AppCompatActivity {
             }
         });
 
+        Button btnPesquisar = (Button) findViewById(R.id.pesquisar_btnPesquisar);
+        btnPesquisar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(PesquisarActivity.this, ResultadoPesquisaActivity.class));
+            }
+        });
+
     }
 }

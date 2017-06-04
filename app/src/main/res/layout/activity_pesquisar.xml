@@ -29,4 +29,12 @@
         android:layout_height="wrap_content"
         android:id="@+id/pesquisar_btnTipoServico" />
 
+    <Button
+        android:text="Pesquisar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_gravity="right"
+        android:id="@+id/pesquisar_btnPesquisar" />
+
 </LinearLayout>

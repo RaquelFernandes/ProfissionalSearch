@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:text="Fulano de Tal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="31dp"
+        android:id="@+id/pesquisa_lista_resultado_txtNome"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="Tecnologia da Informação"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/pesquisa_lista_resultado_txtRamo"
+        android:layout_below="@+id/pesquisa_lista_resultado_txtNome"
+        android:layout_alignStart="@+id/pesquisa_lista_resultado_txtNome"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="Tipo de Serviço"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/pesquisa_lista_resultado_txtTipoServico"
+        android:textSize="18sp"
+        android:layout_below="@+id/pesquisa_lista_resultado_txtRamo"
+        android:layout_alignStart="@+id/pesquisa_lista_resultado_txtRamo" />
+
+    <TextView
+        android:text="Ferramenta de trabalho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/pesquisa_lista_resultado_txtFerramentaTrabalho"
+        android:textSize="18sp"
+        android:layout_below="@+id/pesquisa_lista_resultado_txtTipoServico"
+        android:layout_alignStart="@+id/pesquisa_lista_resultado_txtTipoServico" />
+</RelativeLayout>

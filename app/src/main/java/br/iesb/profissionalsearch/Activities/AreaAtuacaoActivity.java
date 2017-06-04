@@ -6,6 +6,10 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.Menu;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -33,7 +37,12 @@ public class AreaAtuacaoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_area_atuacao);
 
         listar();
+    }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.salvar_pesquisa_menu, menu);
+        return super.onCreateOptionsMenu(menu);
     }
 
     private void listar(){
