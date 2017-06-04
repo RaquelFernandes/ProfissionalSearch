@@ -21,7 +21,7 @@ public class UsarComoActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(UsarComoActivity.this, AreaAtuacaoActivity.class));
+                startActivity(new Intent(UsarComoActivity.this, PesquisarActivity.class));
             }
 
         });

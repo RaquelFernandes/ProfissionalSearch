@@ -17,9 +17,9 @@ import br.iesb.profissionalsearch.R;
  * Created by 1514290042 on 02/06/2017.
  */
 
-public class AreaAtuacaoRecycleViewAdapter extends RecyclerView.Adapter<AreaAtuacaoViewHolder> {
+public class AreaAtuacaoRecycleViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
-       Context context;
+    Context context;
     List<AreaAtuacao> lstAtuacao;
 
     public AreaAtuacaoRecycleViewAdapter(){
@@ -43,12 +43,12 @@ public class AreaAtuacaoRecycleViewAdapter extends RecyclerView.Adapter<AreaAtua
     }
 
 
-    public void onBindViewHolder(AreaAtuacaoViewHolder holder, int position) {
+    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
 
         AreaAtuacao areaAtuacao = lstAtuacao.get(position);
-
-        holder.id.setText(areaAtuacao.getNome());
-        holder.nome.setText(areaAtuacao.getNome());
+        AreaAtuacaoViewHolder viewHolder = (AreaAtuacaoViewHolder) holder;
+        viewHolder.id.setText(areaAtuacao.getNome());
+        viewHolder.nome.setText(areaAtuacao.getNome());
     }
 
     @Override

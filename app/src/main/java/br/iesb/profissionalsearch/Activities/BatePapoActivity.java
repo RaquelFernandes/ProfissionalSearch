@@ -66,13 +66,11 @@ public class BatePapoActivity extends AppCompatActivity {
         return true;
     }
 
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.batepapo_menu,menu);
         return true;
     }
-
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

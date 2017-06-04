@@ -15,8 +15,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.UsarComoActivity">
-        </activity>
+        <activity android:name=".Activities.UsarComoActivity" />
         <activity android:name=".Activities.CadastrarActivity" />
         <activity android:name=".Activities.LoginActivity">
             <intent-filter>
@@ -27,8 +26,10 @@
         </activity>
         <activity android:name=".Activities.AreaAtuacaoActivity" />
         <activity android:name=".Activities.PerfilActivity" />
-        <activity android:name=".Activities.BatePapoActivity">
-        </activity>
+        <activity android:name=".Activities.BatePapoActivity" />
+        <activity android:name=".Activities.EstadoActivity" />
+        <activity android:name=".Activities.PesquisarActivity" />
+        <activity android:name=".Activities.TipoServicoActivity"></activity>
     </application>
 
 </manifest>

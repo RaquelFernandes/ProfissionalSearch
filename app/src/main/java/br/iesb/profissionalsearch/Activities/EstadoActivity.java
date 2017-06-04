@@ -1,6 +1,5 @@
 package br.iesb.profissionalsearch.Activities;
 
-import android.hardware.Camera;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -18,22 +17,22 @@ import java.util.List;
 
 import br.iesb.profissionalsearch.Adapter.AreaAtuacaoRecycleViewAdapter;
 import br.iesb.profissionalsearch.Models.AreaAtuacao;
+import br.iesb.profissionalsearch.Models.Estado;
 import br.iesb.profissionalsearch.R;
 
-public class AreaAtuacaoActivity extends AppCompatActivity {
+public class EstadoActivity extends AppCompatActivity {
 
     DatabaseReference database;
     FirebaseDatabase firebase;
-    ArrayList<AreaAtuacao> lst = new ArrayList<>();
+    ArrayList<Estado> lst = new ArrayList<>();
     AreaAtuacaoRecycleViewAdapter recycleAdapter = new AreaAtuacaoRecycleViewAdapter();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_area_atuacao);
+        setContentView(R.layout.activity_estado);
 
         listar();
-
     }
 
     private void listar(){
@@ -41,16 +40,16 @@ public class AreaAtuacaoActivity extends AppCompatActivity {
         final List<AreaAtuacao> lista = new ArrayList<>();
 
         firebase = FirebaseDatabase.getInstance();
-        database = firebase.getReference("area_atuacao");
+        database = firebase.getReference("estados");
 
         database.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for (DataSnapshot c : dataSnapshot.getChildren()) {
-                    AreaAtuacao areaAtuacao = c.getValue(AreaAtuacao.class);
-                    Log.d(" aa ", areaAtuacao.toString());
-                    Log.d(" aa ", c.getValue().toString());
-                    lst.add(areaAtuacao);
+                    Estado estado = c.getValue(Estado.class);
+                    Log.d(" bb ", estado.toString());
+                    Log.d(" bb ", c.getValue().toString());
+                    lst.add(estado);
                 }
                 recycleAdapter.notifyDataSetChanged();
             }
@@ -61,11 +60,11 @@ public class AreaAtuacaoActivity extends AppCompatActivity {
         });
         if(lista.size() == 0 ){
 
-            lista.add(new AreaAtuacao (1, "Administração"));
-            lista.add(new AreaAtuacao (2, "Financeira"));
-            lista.add(new AreaAtuacao (3, "TI"));
+            lista.add(new AreaAtuacao (1, "Goias"));
+            lista.add(new AreaAtuacao (2, "DF"));
         }
-        RecyclerView recycle = (RecyclerView) findViewById(R.id.areaAtuacao_lista);
+
+        RecyclerView recycle = (RecyclerView) findViewById(R.id.estado_lista);
         recycle.setAdapter(new AreaAtuacaoRecycleViewAdapter(this, lista));
         recycle.setPadding(35, 0, 0, 0);
 
@@ -74,4 +73,5 @@ public class AreaAtuacaoActivity extends AppCompatActivity {
 
         recycle.setLayoutManager(layout);
     }
+
 }
