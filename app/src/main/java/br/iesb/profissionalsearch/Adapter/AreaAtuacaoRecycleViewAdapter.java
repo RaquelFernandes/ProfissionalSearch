@@ -19,8 +19,17 @@ import br.iesb.profissionalsearch.R;
 
 public class AreaAtuacaoRecycleViewAdapter extends RecyclerView.Adapter<AreaAtuacaoViewHolder> {
 
-    Context context;
+       Context context;
     List<AreaAtuacao> lstAtuacao;
+
+    public AreaAtuacaoRecycleViewAdapter(){
+
+    }
+
+    public void atualizarDados(List<AreaAtuacao> lista) {
+        this.lstAtuacao = lista;
+        notifyDataSetChanged();
+    }
 
     public AreaAtuacaoRecycleViewAdapter(Context context, List<AreaAtuacao> lst) {
         this.context = context;
@@ -33,7 +42,7 @@ public class AreaAtuacaoRecycleViewAdapter extends RecyclerView.Adapter<AreaAtua
         return new AreaAtuacaoViewHolder(view);
     }
 
-    @Override
+
     public void onBindViewHolder(AreaAtuacaoViewHolder holder, int position) {
 
         AreaAtuacao areaAtuacao = lstAtuacao.get(position);

@@ -15,20 +15,20 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.UsarComoActivity" >
+        <activity android:name=".Activities.UsarComoActivity">
+        </activity>
+        <activity android:name=".Activities.CadastrarActivity" />
+        <activity android:name=".Activities.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.CadastrarActivity" />
-        <activity android:name=".Activities.LoginActivity">
-
+        <activity android:name=".Activities.AreaAtuacaoActivity" />
+        <activity android:name=".Activities.PerfilActivity" />
+        <activity android:name=".Activities.BatePapoActivity">
         </activity>
-        <activity android:name=".Activities.AreaAtuacaoActivity"></activity>
-        <activity android:name=".Activities.CadastrarActivity" />
-        <activity android:name=".Activities.PerfilActivity"></activity>
     </application>
 
 </manifest>

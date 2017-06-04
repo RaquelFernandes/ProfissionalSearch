@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -8,9 +8,23 @@
         android:layout_height="wrap_content"
         android:visibility="gone"
         android:id="@+id/areaAtuacao_lista_txtId"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        android:layout_below="@+id/areaAtuacao_lista_txtId"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="88dp" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/areaAtuacao_lista_txtNome"/>
+        android:hint="ta aqui"
+        android:id="@+id/areaAtuacao_lista_txtNome"
+        android:layout_alignBaseline="@+id/checkBox"
+        android:layout_alignBottom="@+id/checkBox"
+        android:layout_toEndOf="@+id/areaAtuacao_lista_txtId"
+        android:layout_marginStart="11dp" />
 
-</LinearLayout>
+</RelativeLayout>
