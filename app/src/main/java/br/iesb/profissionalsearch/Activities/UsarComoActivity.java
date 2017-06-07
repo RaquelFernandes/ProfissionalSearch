@@ -21,9 +21,25 @@ public class UsarComoActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(UsarComoActivity.this, AreaAtuacaoActivity.class));
+                startActivity(new Intent(UsarComoActivity.this, PesquisarActivity.class));
             }
 
+        });
+
+        Button btnEntrarProfissional = (Button) findViewById(R.id.usarComo_btnEntrarProfissional);
+        btnEntrarProfissional.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(UsarComoActivity.this, PerfilActivity.class));
+            }
+        });
+
+        Button btnBatePapo = (Button) findViewById(R.id.usarComo_btnBatePapo);
+        btnBatePapo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(UsarComoActivity.this, BatePapoActivity.class));
+            }
         });
     }
 }
