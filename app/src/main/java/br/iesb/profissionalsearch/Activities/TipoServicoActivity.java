@@ -66,11 +66,6 @@ public class TipoServicoActivity extends AppCompatActivity {
 
             }
         });
-        if(lista.size() == 0 ){
-
-            lista.add(new AreaAtuacao (1, "Otimização de aplicaçoes"));
-            lista.add(new AreaAtuacao (2, "Renegociação de dívidas"));
-        }
 
         RecyclerView recycle = (RecyclerView) findViewById(R.id.tipoServico_lista);
         recycle.setAdapter(new AreaAtuacaoRecycleViewAdapter(this, lista));
