@@ -23,7 +23,7 @@ public class AreaAtuacao implements Serializable {
     }
 
     public void setNome(String nome) {
-        nome = nome;
+        this.nome = nome;
     }
 
     public int getId() {
@@ -31,6 +31,6 @@ public class AreaAtuacao implements Serializable {
     }
 
     public void setId(int id) {
-        id = id;
+        this.id = id;
     }
 }

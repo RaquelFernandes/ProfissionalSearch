@@ -65,11 +65,6 @@ public class EstadoActivity extends AppCompatActivity {
 
             }
         });
-        if(lista.size() == 0 ){
-
-            lista.add(new AreaAtuacao (1, "Goias"));
-            lista.add(new AreaAtuacao (2, "DF"));
-        }
 
         RecyclerView recycle = (RecyclerView) findViewById(R.id.estado_lista);
         recycle.setAdapter(new AreaAtuacaoRecycleViewAdapter(this, lista));

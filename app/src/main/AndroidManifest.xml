@@ -3,6 +3,11 @@
     package="br.iesb.profissionalsearch">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <!--<uses-permission android:name="android.permission.GET_ACCOUNTS" />-->
@@ -30,7 +35,8 @@
         <activity android:name=".Activities.EstadoActivity" />
         <activity android:name=".Activities.PesquisarActivity" />
         <activity android:name=".Activities.TipoServicoActivity" />
-        <activity android:name=".Activities.ResultadoPesquisaActivity"></activity>
+        <activity android:name=".Activities.ResultadoPesquisaActivity" />
+        <activity android:name=".Activities.VerNoMapaActivity"></activity>
     </application>
 
 </manifest>
